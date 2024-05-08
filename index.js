@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
-    { message: "Enter First Number", type: "number", name: "FirstNumber" },
-    { message: "Enter Second Number", type: "number", name: "SecondNumber" },
+    { message: "Enter Your First Number", type: "number", name: "FirstNumber" },
+    { message: "Enter Your Second Number", type: "number", name: "SecondNumber" },
     {
         message: "Select One Of The Operators To Perform The Action",
         type: "list",
@@ -26,3 +26,4 @@ else if (answer.Operater === "Divison") {
 else {
     console.log("Enter valid number");
 }
+//comment
