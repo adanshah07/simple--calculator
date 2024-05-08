@@ -6,21 +6,21 @@ const answer = await inquirer.prompt([
     {
         message: "Select One Of The Operators To Perform The Action",
         type: "list",
-        name: "Operater",
-        choices: ["Addition", "Substraction", "Multipilication", "Divison"],
+        name: "Operator",
+        choices: ["Addition", "Subtraction", "Multiplication", "Division"],
     },
 ]);
-// conditional operater
-if (answer.Operater === "Addition") {
+// conditional operator
+if (answer.Operator === "Addition") {
     console.log(answer.FirstNumber + answer.SecondNumber);
 }
-else if (answer.Operater === "Substraction") {
+else if (answer.Operator === "Subtraction") {
     console.log(answer.FirstNumber - answer.SecondNumber);
 }
-else if (answer.Operater === "Multipilication") {
+else if (answer.Operator === "Multiplication") {
     console.log(answer.FirstNumber * answer.SecondNumber);
 }
-else if (answer.Operater === "Divison") {
+else if (answer.Operator === "Division") {
     console.log(answer.FirstNumber / answer.SecondNumber);
 }
 else {
